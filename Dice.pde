@@ -11,16 +11,16 @@ void setup()
       for (int column = 10; column <= 400; column += 70){
         for (int row = 10; row <= 500; row += 70){
           fill(255);
-        Die bob = new Die(row, column);
-        bob.show();
-        diceSum = diceSum + bob.diceNumber;
-        System.out.println(diceSum);
+          Die bob = new Die(row, column);
+          bob.show();
+          diceSum = diceSum + bob.diceNumber;
+          
        
         }
       }
       fill(0);
-       textSize(30);
-        text("Total Dice Sum = " + diceSum, 10, 450);
+      textSize(30);
+      text("Total Dice Sum = " + diceSum, 10, 450);
   }
   
   void mousePressed()
